@@ -5,6 +5,7 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -112,8 +113,7 @@ nav ul li a:hover {
 .sct1-content a {
     background: white;
     border-radius: 10px;
-    width: 135px;
-    height: 40px;
+    padding: 10px 30px;
     font-family: Montserrat;
     font-weight: 400;
     font-size: 12px;
@@ -124,7 +124,8 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
 }
-.sct1-content a:hover{
+
+.sct1-content a:hover {
     color: #fff;
     background: #d61c22;
     transition: 0.7s;
@@ -273,6 +274,7 @@ nav ul li a:hover {
     height: 219px;
     border-radius: 10px;
 }
+
 .card1 img:hover {
     scale: 1.1;
     transition: 1s;
@@ -390,8 +392,7 @@ nav ul li a:hover {
 .img3-1:hover,
 .img3-2:hover,
 .img4:hover,
-.img5:hover
- {
+.img5:hover {
     scale: 1.1;
     transition: 1s;
 }
@@ -557,6 +558,11 @@ nav ul li a:hover {
     align-items: center;
 }
 
+.imgs {
+    display: flex;
+    gap: 1.5rem;
+}
+
 footer {
     width: 100%;
     height: 80px;
@@ -630,4 +636,169 @@ footer {
 .btn i {
     color: white;
     cursor: pointer;
+}
+
+@media (max-width: 992px) {
+
+    .header-content nav {
+        display: none;
+    }
+
+    .icons i {
+        font-size: 20px;
+    }
+
+    .sct1-content span {
+        font-size: 40px;
+    }
+
+    .sct1-content h2 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .sct2 {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .sct2-img {
+        margin-top: 1rem;
+    }
+
+    .sct2-content {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .sct4 {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .sct5 {
+        height: auto;
+    }
+
+    .sct5-content {
+        height: auto;
+    }
+
+    .sct5-title {
+        height: auto;
+        width: 100%;
+    }
+
+    .sct5-imgs {
+        height: auto;
+        width: 100%;
+    }
+
+    .sct5-title h6 {
+        width: 100%;
+    }
+
+    .top-imgs {
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .bottom-imgs {
+        height: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    .imgs {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .img2,
+    .img1 {
+        width: 280px;
+    }
+
+    .img3 {
+        width: 100%;
+    }
+
+    .img3-1,
+    .img3-2 {
+        width: 90%;
+        margin-top: 1rem;
+    }
+
+    .img4,
+    .img5 {
+        width: 90%;
+    }
+}
+
+@media (max-width:600px) {
+    .sct1-content h2 {
+        font-size: 34px;
+    }
+
+    .logo img {
+        width: 90px;
+        height: 40px;
+    }
+
+    .sct2-text h3 {
+        font-size: 2rem;
+    }
+
+    .sct3-img h4 {
+        text-align: center;
+    }
+
+    .sct2-text span {
+        font-size: 25px;
+    }
+
+    .sct2-text {
+        width: 100%;
+    }
+
+    .sct5-title h6 {
+        font-size: 30px;
+    }
+
+    .card1 {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .card1-content {
+        width: 100%;
+    }
+    .imgs {
+        flex-wrap: wrap;
+    }
+    .card1 {
+        width: 100%;
+    }
+    .card1 img {
+        width: 100%;
+    }
+    .sct2-img {
+        width: 100%;
+    }
+    .card1-content {
+        width:100%;
+    }
+    .card1-content p {
+        width: 100%;
+    }
+    .footer-content {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
 }
